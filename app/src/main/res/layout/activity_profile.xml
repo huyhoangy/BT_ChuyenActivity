@@ -126,7 +126,7 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/custom_bg_epass"
                     android:ems="10"
-                    android:hint="Email"
+                    android:text="Email:Hoang@gmail.com"
                     android:textColor="#0D459E"
                     android:textColorHint="#0D459E"
                     app:layout_constraintEnd_toEndOf="parent"
