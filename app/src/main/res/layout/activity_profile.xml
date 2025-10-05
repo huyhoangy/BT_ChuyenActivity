@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16AAEF">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="&lt;Back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Profile"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn_setting"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_setting"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_setting" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="217dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_profile" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Profile Name"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="125 Friends"
+                android:textColor="#F8F1F1"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="250 Followers"
+                android:textColor="#FAF6F6"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F6E7E7"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <EditText
+                    android:id="@+id/ett_Email"
+                    android:layout_width="0dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/custom_bg_epass"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:textColor="#0D459E"
+                    android:textColorHint="#0D459E"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ett_Phone"
+                    android:layout_width="0dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_bg_epass"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Phone:0911049087"
+                    android:textColor="#0D459E"
+                    app:layout_constraintEnd_toEndOf="@+id/ett_Email"
+                    app:layout_constraintStart_toStartOf="@+id/ett_Email"
+                    app:layout_constraintTop_toBottomOf="@+id/ett_Email" />
+
+                <EditText
+                    android:id="@+id/ett_Skype"
+                    android:layout_width="0dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_bg_epass"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Skype: me007"
+                    android:textColor="#0D459E"
+                    app:layout_constraintEnd_toEndOf="@+id/ett_Phone"
+                    app:layout_constraintStart_toStartOf="@+id/ett_Phone"
+                    app:layout_constraintTop_toBottomOf="@+id/ett_Phone" />
+
+                <EditText
+                    android:id="@+id/ett_Web"
+                    android:layout_width="0dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_bg_epass"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Web: cssauthor.com"
+                    android:textColor="#0D459E"
+                    app:layout_constraintEnd_toEndOf="@+id/ett_Skype"
+                    app:layout_constraintStart_toStartOf="@+id/ett_Skype"
+                    app:layout_constraintTop_toBottomOf="@+id/ett_Skype" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
